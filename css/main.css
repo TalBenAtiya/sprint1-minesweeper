@@ -1,6 +1,6 @@
 
 body {
-    background-image: url(/Day13-14-Sprint1/Delivery2\ -\ Thursday\ 2030/img/background.jpg);
+    background-image: url(../img/background.jpg);
     background-size: cover;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -84,6 +84,7 @@ h2{
     background-color: rgba(244, 216, 76, 0.945);
     border: 0;
 }
+
 .level-1{
     position: absolute;
     left: 915px;
