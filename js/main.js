@@ -47,13 +47,16 @@ function chooseLevel(btn) {
 function initGame(level = currLvl) {
     var elLives = document.querySelector('.lives')
     var elBtn = document.querySelector('.smiley')
+    var elTxt = document.querySelector(`h4`)
     elLives.innerText = '❤️❤️❤️'
     elBtn.innerText = '😄'
+    console.log(elTxt.innerText);
+    elTxt.innerText = '3 Clicks Available'
 
     resetTimer()
 
     gIsHint = false
-    gHints = 3
+    // gHints = 3
     gSafeClicks = 3
     gIsTimer = false
     gLives = 3

@@ -125,7 +125,6 @@ function stopWatch() {
     }
 }
 
-
 function resetTimer(){
     miliSec = 0
     sec = 0
