@@ -50,21 +50,21 @@ function getEmptyCells() {
     return emptyCells[idx]
 }
 
-function countNeighborsMines(cellI, cellJ, mat) {
-    var minesCount = 0;
+// function countNeighborsMines(cellI, cellJ, mat) {
+//     var minesCount = 0;
 
-    for (var i = cellI - 1; i <= cellI + 1; i++) {
-        if (i < 0 || i >= mat.length) continue;
-        for (var j = cellJ - 1; j <= cellJ + 1; j++) {
-            if (i === cellI && j === cellJ) continue;
-            if (j < 0 || j >= mat[i].length) continue;
-            if (mat[i][j] === MINE) {
-                minesCount++
-            }
-        }
-    }
-    return minesCount;
-}
+//     for (var i = cellI - 1; i <= cellI + 1; i++) {
+//         if (i < 0 || i >= mat.length) continue;
+//         for (var j = cellJ - 1; j <= cellJ + 1; j++) {
+//             if (i === cellI && j === cellJ) continue;
+//             if (j < 0 || j >= mat[i].length) continue;
+//             if (mat[i][j] === MINE) {
+//                 minesCount++
+//             }
+//         }
+//     }
+//     return minesCount;
+// }
 
 function getNeighborsStatus(cellI, cellJ, mat) {
     const neighborsOpts = []
@@ -126,3 +126,11 @@ function stopWatch() {
 }
 
 
+function resetTimer(){
+    miliSec = 0
+    sec = 0
+    min = 0
+    var elTimer = document.querySelector('.timer')
+    elTimer.innerText = `00:00:00`
+    
+}
