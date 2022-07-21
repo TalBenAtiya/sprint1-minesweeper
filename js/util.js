@@ -1,3 +1,4 @@
+'use strict'
 
 function renderBoard(mat) {
     var strHTML = '<table border="0" celpadding="5"><tbody>'
@@ -90,7 +91,7 @@ var miliSec = 0
 var sec = 0
 var min = 0
 function stopWatch() {
-    if (gGame.isOn) {
+    if (gIsTimer) {
         miliSec = parseInt(miliSec)
         sec = parseInt(sec)
         min = parseInt(min)
@@ -119,9 +120,9 @@ function stopWatch() {
         if (min < 10) {
             min = '0' + min
         }
+        var elStopWatch = document.querySelector('.timer')
+        elStopWatch.innerText = min + ' : ' + sec + ' : ' + miliSec
     }
-    var elStopWatch = document.querySelector('.timer')
-    elStopWatch.innerText = min + ' : ' + sec + ' : ' + miliSec
 }
 
 
