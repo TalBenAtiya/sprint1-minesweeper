@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>MineSwipper</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="bg-img" onload="initGame()">
+    <h1>MineSwipper</h1>
+    <div class="restart">
+        <button class="level-2" onclick="chooseLevel(this)">Hard</button>
+        <button class="level-1" onclick="chooseLevel(this)">Medium</button>
+        <button class="level-0" onclick="chooseLevel(this)">Easy</button>
+
+        <button class="smiley" onclick="restartGame()">😄</button>
+        <h2>Lives:<span class="lives"></span> </h3>
+        <h3>Time:<span class="timer">00:00:00</span></h3> 
+    </div>
+    <div class="board">
+        
+    </div>
+
+    
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
