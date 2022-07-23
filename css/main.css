@@ -7,16 +7,18 @@ body {
 }
 
 h1 {
+    margin-bottom: 75px;
     margin-top: 50px;
     text-align: center;
     font-size: 80px;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 .board {
     width: 500px;
     height: 500px;
     margin: auto;
-    background-color: lightgrey;
+    background-color: rgba(0, 0, 0, 0.267);
     cursor: pointer;
     margin: 0 auto;
     margin-top: 50px;
@@ -29,16 +31,15 @@ table {
 }
 
 td {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin: 0;
     text-align: center;
     width: 30px;
     height: 30px;
-    border: 0.1px solid rgb(125, 48, 119);
+    /* border-radius: 10px; */
+    border: 0.1px solid rgb(255, 255, 255);
     font-size: 1.3em;
 }
-
-
 
 .restart {
     color: white;
@@ -124,7 +125,7 @@ button:hover{
     left: 580px;
     width: 100px;
     height: 50px;
-    top: 400px;
+    top: 430px;
     border: 0;
     background-color: rgb(125, 48, 119);
     font-size: 1.3em;
